@@ -28,12 +28,12 @@ Partial Class AlumnoGrid
         Me.elimina = New System.Windows.Forms.Button
         Me.salir = New System.Windows.Forms.Button
         Me.modifica = New System.Windows.Forms.Button
-        Me.AlumnoColectionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.NyaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.EdadDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.NacimientoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.MailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.DniDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.AlumnoColectionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AlumnoColectionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -88,10 +88,6 @@ Partial Class AlumnoGrid
         Me.modifica.Text = "Modifica"
         Me.modifica.UseVisualStyleBackColor = True
         '
-        'AlumnoColectionBindingSource
-        '
-        Me.AlumnoColectionBindingSource.DataSource = GetType(AMB_Alumnos.AlumnoColection)
-        '
         'NyaDataGridViewTextBoxColumn
         '
         Me.NyaDataGridViewTextBoxColumn.DataPropertyName = "nya"
@@ -127,6 +123,10 @@ Partial Class AlumnoGrid
         Me.DniDataGridViewTextBoxColumn.Name = "DniDataGridViewTextBoxColumn"
         Me.DniDataGridViewTextBoxColumn.ReadOnly = True
         '
+        'AlumnoColectionBindingSource
+        '
+        Me.AlumnoColectionBindingSource.DataSource = GetType(AMB_Alumnos.AlumnoColection)
+        '
         'AlumnoGrid
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -138,7 +138,8 @@ Partial Class AlumnoGrid
         Me.Controls.Add(Me.nuevo)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "AlumnoGrid"
-        Me.Text = "Form2"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Grilla Alumnos"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AlumnoColectionBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

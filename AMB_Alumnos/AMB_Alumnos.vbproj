@@ -7,11 +7,11 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{ABDA5BCB-0EFE-4400-AFDA-4EBB1FBF33A3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>AMB_Alumnos.My.MyApplication</StartupObject>
+    <StartupObject>AMB_Alumnos.Module1</StartupObject>
     <RootNamespace>AMB_Alumnos</RootNamespace>
     <AssemblyName>AMB_Alumnos</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>

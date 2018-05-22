@@ -91,6 +91,7 @@ Partial Class AlumnoForm
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(144, 39)
+        Me.TextBox2.MaxLength = 10
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(158, 20)
         Me.TextBox2.TabIndex = 6
@@ -98,6 +99,7 @@ Partial Class AlumnoForm
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(144, 65)
+        Me.TextBox3.MaxLength = 10
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(158, 20)
         Me.TextBox3.TabIndex = 7
@@ -152,6 +154,7 @@ Partial Class AlumnoForm
         Me.Controls.Add(Me.dni)
         Me.Controls.Add(Me.nya)
         Me.Name = "AlumnoForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "AlumnoForm"
         Me.ResumeLayout(False)
         Me.PerformLayout()
